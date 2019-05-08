@@ -1,0 +1,151 @@
+	<html>
+<head>
+<title>Online Blood Pool | Registration</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+</head>
+<body>
+<div id="page">
+  <div id="header">
+    <div id="connect"> <a href="#" class="facebook"></a> <a href="#" class="twitter"></a> </div>
+    <a href="index.php" id="logo"><img src="images/logo_1457185690879.png" width="300" height="100" alt="" /></a>
+  <ul id="navigation">
+   <li><a href="index.php">HOME</a></li>
+   <li class="selected Donor Registration"><a href="Registration.html">DONOR REGISTRATION</a></li>
+      <li><a href="blood request.html">BLOOD REQUEST</a></li>
+      <li><a href="search donor.html">SEARCH DONAR</a></li>
+      <li><a href="blood tips.html">BLOOD TIPS</a></li>
+    </ul>
+  </div>
+  <!-- /#header -->
+  <div id="body">
+ <center>
+  <form action="reg.php" method="post">
+      <h2 style="color:#F00"><strong>Register as a Blood Donor</strong></h2>
+      <fieldset style="background-position:center">
+      <fieldset style="background-position:center">
+<legend align="center"> <b> <img height="23" align="absmiddle" width="16" src="L&K/download (5).jpg"/> Future Login Information </b> </legend>
+                                <table cellspacing="3" cellpadding="1" width="420" align="center">
+                                  <tr>
+                                    <td width="205" align="left" valign="top">Full Name </td>
+                                    <td align="left" valign="top"><input name="Fullname"  type="text" maxlength="30" placeholder="Full Name" required autofocus="true" title="Enter your Full Name"/>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" valign="top" class="login_name">Username</td>
+                                    <td align="left" valign="top"><input name="Username"  type="text"  placeholder="User Name"  maxlength="20" title="Enter the username"/>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" valign="top" class="login_name">Password</td>
+                                    <td align="left" valign="top"><input name="Password"  type="password" placeholder="Password" required  pattern="([A-Z][0-9].{8,}" title="Enter the password" maxlength="20" />
+                                       </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" valign="top" class="login_name">Confirm Password </td>
+                                    <td align="left" valign="top"><input name="Con_Password" type="password" placeholder="Re-enter Password" pattern="([A-Z][0-9].{8,}"  title="Enter the Confirm Password" maxlength="20" />
+                                       </td>
+                                  </tr>
+                                </table>
+</fieldset>
+                                    <center>
+         <fieldset style="background-position:center">
+<legend align="center">  <b> <img height="21" align="absmiddle" width="21" src="images/images (52).jpg"/> Donor Information </b> </legend>
+                                <table cellspacing="3" cellpadding="1" width="420">
+                                  <tr>
+                                    <td width="205" align="left" valign="top" >Date of Birth </td>
+   <td>                                  																	  <input name="DOB" type="date"  placeholder="Date Of Birth"></td>
+								 </tr>
+                                  <tr>
+                                    <td align="left" valign="top">Gender</td>
+                                    <td align="left" valign="top"><input name="Gender"  type="radio" placeholder="gender" required pattern="[A-Z][a-z]" title="Select the gender" value="MALE" /> Male <input name="Gender" type="radio" placeholder="Gender" required pattern="[A-z][a-z]" title="Select the gender" value="FEMALE" />
+                                      Female
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" valign="top">Blood Group</td>
+             <td align="left" valign="top">
+					<select name="Bloodgroup" placeholder="Bloodgroup" ><option value="0">-Select your bloodgroup-</option><option value="A+">A+</option><option value="A1+">A1+</option><option value="A2+">A2+</option><option value="B+">B+</option><option value="A1B+">A1B+</option><option value="A2B+">A2B+</option><option value="AB+">AB+</option><option value="O+">O+</option><option value="A-">A-</option><option value="A1-">A1-</option><option value="A2-">A2-</option><option value="B-">B-</option><option value="A1B-">A1B-</option><option value="A2B-">A2B-</option><option value="AB-">AB-</option><option value="O-">O-</option></select>                                     </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" valign="top" class="login_name">Weight</td>
+                                    <td align="left" valign="top"><input name="Weight"  type="text" size="5" maxlength="5" placeholder="Weight"  title="Enter your Weight" />
+                                       <font color="#999966">Kgs.</font> </td>
+                                  </tr>
+                                </table>
+                                </fieldset>
+
+</center>
+<center>
+<fieldset style="background-position:center">
+      <legend align="center"><b> <img height="16" align="absmiddle" width="13" src="images/AddressBook.gif"/> Contact Information </b> </legend>
+      <table cellspacing="3" cellpadding="1" width="420">
+     
+     
+        <tr>
+          <td align="left" valign="top" > Mobile No.  </td>
+          <td align="left" valign="top"><input name="Mobile" type="text" maxlength="15" placeholder="Phone No"   pattern="[7-9]{1}[0-9]{9}" title="Enter your Mobile number" />
+            </td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"  width="205">Office Phone </td>
+          <td align="left" valign="top"><input name="Off_Phone" type="text" maxlength="15"  placeholder="Another No"  pattern="[7-9]{1}[0-9]{9}" title="Enter your Office number" />
+             </td>
+        </tr>
+        <tr>
+          <td align="left" valign="top" >Email ID </td>
+          <td align="left" valign="top"><input name="Emailid" type="text"  maxlength="50" placeholder="Email Id"  pattern="^[a-zA-Z0-9]+@+[a-z]+.+[a-z]{3,5}$" title="Enter your Email id"/>
+             </td>
+        </tr>
+        <tr>
+          <td align="left" valign="top" class="login_name">Address</td>
+          <td align="left" valign="top"><textarea rows="3" name="Address" placeholder="Address"  title="Enter your Address"></textarea></td>
+        </tr>
+        
+          <td align="left" valign="top" class="login_name">City</td>
+           <td><select name="City" plceholder="City"  title="select your city"><option value="0">- Select Your City -</option><option value="Ariyalur">Ariyalur</option><option value="Chennai">Chennai</option><option value="Coimbatore">Coimbatore</option><option value="Cuddalore">Cuddalore</option><option value="Dharmapuri">Dharmapuri</option><option value="Dindigul">Dindigul</option><option value="Erode">Erode</option><option value="Kanchipuram">Kanchipuram</option><option value="Kanyakumari">Kanyakumari</option><option value="Karur">Karur</option><option value="Krishnagiri">Krishnagiri</option><option value="Madurai">Madurai</option><option value="Nagapattinam">Nagapattinam</option><option value="Namakkal">Namakkal</option><option value="Nilgiris">Nilgiris</option><option value="Perambalur">Perambalur</option><option value="Pudukkottai">Pudukkottai</option><option value="Rmanathapuram">Rmanathapuram</option><option value="Salem">Salem</option><option value="Sivaganga">Sivaganga</option><option value="Thanjavur">Thanjavur</option><option value="Theni">Theni</option><option value="Thothukudi">Thothukudi</option><option value="Tiruchirappalli">Tiruchirappalli</option><option value="Tirunelveli">Tirunelveli</option><option value="Tiruppur">Tiruppur</option><option value="Tiruvallur">Tiruvallur</option><option value="Tiruvannamalai">Tiruvannamalai</option><option value="Tiruvarur">Tiruvarur</option><option value="Vellore">Vellore</option><option value="Viluppuram">Viluppuram</option><option value="Virudhunagar">Virudhunagar</option></select></td>
+
+        </tr>
+        <tr>
+          <td align="left">Date of last blood donation</td>
+          <td valign="top" align="left" class="login_name">
+            <input name="DOLBD" type="date">
+		    								    </td>
+        </tr>
+        <tr>
+          <td valign="top" align="left" >How often have you donated <br />
+            blood in the past?</td>
+          <td align="left"><select name="Donatedblood" placeholder="DonatedBlood" ><option value="0">-Select-</option><option value="Yet to donate">Yet to donate</option><option value="Regular donor">Regular donor</option><option value="On need basis">On need basis</option></select>                                     </td>
+        </tr>
+        
+      </table>
+      </fieldset>
+      </center>
+      <center>
+
+                                <legend><b> <img height="18" align="absmiddle" width="20" src="images/checkmark.gif"/> Form Verification </b></legend>
+                                <table cellspacing="3" cellpadding="1" width="420">
+                                 
+                                  <tr>
+                                    <td colspan="2"><table border="0" cellspacing="0" cellpadding="2">
+                                      <tr>
+                                        <td valign="top"><input id="txtAccept" type="checkbox" value="Accept" name="txtAccept"/></td>
+                                        <td valign="top"> I have read the Eligibility Criteria and confirm that I am eligible to donate blood.</a></td>
+                                      </tr>
+                                      
+                                    </table>                                    </td>
+                                  </tr>
+                                </table>
+                               
+
+</center>
+<p>
+                                  <input name="reset2" type="reset"  value="Reset" />
+                                  <input name="submit" type="submit"  value="Register &raquo;" />
+          </p>
+          </fieldset></form></center>
+</div>
+</div>
+</body>
+					  </html>
+					 

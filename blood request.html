@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Blood Pool</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" charset="utf-8" />
+</head>
+<body>
+<div id="page">
+  <div id="header">
+    <div id="connect"> <a href="#" class="facebook"></a> <a href="#" class="twitter"></a> </div>
+    <a href="index.php" id="logo"><img src="images/logo_1457185690879.png" width="300" height="100" alt="" /></a>
+    <ul id="navigation">
+      <li><a href="index.php">HOME</a></li>
+      <li><a href="Registration.html">DONOR REGSTRATION</a></li>
+      <li class="selected Blood Request"><a href="blood request.html">BLOOD REQUEST</a></li>
+      <li><a href="search donor.html">SEARCH DONOR</a></li>
+      <li><a href="blood tips.html">BLOOD TIPS</a></li>
+    </ul>
+  </div>
+  <!-- /#header -->
+ <!------------------------------------------------------->
+  <div id="body">
+ <fieldset ><center>
+  <h2><strong>Request Blood</strong></h2>
+  <form action="request.php" method="post" />
+				<fieldset>
+                          <legend> <b> <img align="absmiddle" src="images/add_buddy_icon.gif"/> Patient Details   </b> </legend>
+                                
+								<table cellspacing="3" cellpadding="1" width="420">
+                                                               
+								  <tr>
+                                    <td width="205" align="left" valign="top">Patient Name  </td>
+                                    <td align="left" valign="top">
+									<input name="Patientname" type="text"  placeholder="Patientname" required autofocus="true" title="Enter Patientname" maxlength="30" />
+                                       </td>
+                                  </tr>
+								  <tr>
+                                    <td align="left" valign="top" class="login_name">Required Blood Group</td>
+								    <td align="left" valign="top"><select name="Required_BG" placeholder="Required blood"  title="select any one"><option value="0">-Select Blood Group-</option><option value="A+">A+</option><option value="A1+">A1+</option><option value="A2+">A2+</option><option value="B+">B+</option><option value="A1B+">A1B+</option><option value="A2B+">A2B+</option><option value="AB+">AB+</option><option value="O+">O+</option><option value="A-">A-</option><option value="A1-">A1-</option><option value="A2-">A2-</option><option value="B-">B-</option><option value="A1B-">A1B-</option><option value="A2B-">A2B-</option><option value="AB-">AB-</option><option value="O-">O-</option></select>                                        </td>
+							      </tr>
+                                  
+                                  <tr>
+                                    <td align="left" valign="top" class="login_name">City</td>
+                                     <td><select name="City" plceholder="City"  title="select your city"><option value="0">- Select Your City -</option><option value="Ariyalur">Ariyalur</option><option value="Chennai">Chennai</option><option value="3">Coimbatore</option><option value="Cuddalore">Cuddalore</option><option value="Dharmapuri">Dharmapuri</option><option value="6">Dindigul</option><option value="Erode">Erode</option><option value="8">Kanchipuram</option><option value="Kanyakumari">Kanyakumari</option><option value="Karur">Karur</option><option value="Krishnagiri">Krishnagiri</option><option value="Madurai">Madurai</option><option value="Nagapattinam">Nagapattinam</option><option value="Namakkal">Namakkal</option><option value="Nilgiris">Nilgiris</option><option value="Perambalur">Perambalur</option><option value="Pudukkottai">Pudukkottai</option><option value="Rmanathapuram">Rmanathapuram</option><option value="Salem">Salem</option><option value="Sivaganga">Sivaganga</option><option value="Thanjavur">Thanjavur</option><option value="Theni">Theni</option><option value="Thothukudi">Thothukudi</option><option value="Tiruchirappalli">Tiruchirappalli</option><option value="Tirunelveli">Tirunelveli</option><option value="Tiruppur">Tiruppur</option><option value="Tiruvallur">Tiruvallur</option><option value="Tiruvannamalai">Tiruvannamalai</option><option value="Tiruvarur">Tiruvarur</option><option value="Vellore">Vellore</option><option value="Viluppuram">Viluppuram</option><option value="Virudhunagar">Virudhunagar</option></select></td>
+
+									</td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" valign="top">Hospital Name & Address</td>
+                                    <td align="left" valign="top">
+									<textarea name="Hospital_Name_Addr" rows="3" placeholder="Hospital Address & Name" title="Enter Hospital Address" ></textarea>
+                                     </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" valign="top" >Doctor's  Name</td>
+                                    <td align="left" valign="top">
+									<input name="Doctor_Name" type="text"   maxlength="30" placeholder="Doctor name" title="Enter your Doctorname" />                                     
+									 </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" valign="top" >When Required</td>
+                                    <td align="left" valign="top">
+									<input name="When_Required" type="Date" size="10" maxlength="10" placeholder="When required" />
+                                       </td>
+                                  </tr>
+							    </table>
+							    </fieldset>
+								   
+                                <fieldset>
+                                <legend> <b> <img height="23" align="absmiddle" width="16" src="images/icon-lock.gif"/> Contact details  </b> </legend>
+								  
+								  <table cellspacing="3" cellpadding="1" width="420">
+                                  <tr>
+                                    <td width="208" align="left" valign="top" >Contact Name</td>
+                                    <td width="197" align="left" valign="top">
+									<input name="Contact_Name" type="text"  maxlength="30" placeholder="Name"/>
+									</td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" valign="top" >Contact Email ID</td>
+                                    <td align="left" valign="top">
+									<input name="Contact_Email" type="text"  placeholder="Email Id"  pattern="^[a-zA-Z0-9]+@+[a-z]+.+[a-z]{3,5}$" title="Enter your Email id" maxlength="30" />
+									</td>
+                                  </tr>
+                                  <tr>
+                                    <td align="left" valign="top" class="login_name">Contact Number</td>
+                                    <td align="left" valign="top"><input name="Contact_NO" type="text" placeholder="Phone No" pattern="[7-9]{1}[0-9]{9}" title="Enter your Mobile number" maxlength="15" />
+									</td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td colspan="2" align="center" valign="top">
+									<input id="txtAccept" type="checkbox" value="Accept" name="txtAccept" />
+                                    I agree to have my contact details broadcasted to the registered donors of BloodBankIndia.net</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" align="center" valign="top">
+									 <input name="reset" type="reset"  value="Reset" />
+                                     <input name="request" type="submit"  value="Request &raquo;" /></td>
+                                    </tr>
+                                </table>
+                                </fieldset>
+                                
+                                </form>
+   </center></fieldset>
+  </div>  </div></body>
+</html>
